@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adopter - La Salade de Pattes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    background: url('https://i.imgur.com/bnk7gdA.png') no-repeat center center fixed;
+      background-size: cover;}
+
+    .banner {
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .filters {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .filters select {
+      padding: 10px;
+      margin: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .animal-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .animal-card {
+      background-color: #fff;
+      border: 2px solid #9abab6;
+      border-radius: 10px;
+      width: 280px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .animal-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .animal-info {
+      padding: 15px;
+    }
+
+    .animal-info h3 {
+      margin-top: 0;
+      color: #c86646;
+    }
+
+    .animal-info p {
+      margin: 5px 0;
+    }
+
+    .fiche-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #9abab6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .fiche-btn:hover {
+      background-color: #c86646;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">Nos Animaux à l'Adoption</div>
+
+  <!-- Filtres -->
+  <div class="filters">
+    <select id="filter-type">
+      <option value="all">Tous les types</option>
+      <option value="chat">Chat</option>
+      <option value="chien">Chien</option>
+    </select>
+
+    <select id="filter-sexe">
+      <option value="all">Tous les sexes</option>
+      <option value="male">Mâle</option>
+      <option value="femelle">Femelle</option>
+    </select>
+  </div>
+
+  <!-- Cartes d'animaux -->
+  <div class="animal-section" id="animal-section">
+
+    <div class="animal-card" data-type="chien" data-sexe="male">
+      <img src="https://i.imgur.com/OSN7meK.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Papy</h3>
+        <p>Chien • 14 ans • Mâle</p>
+        <p>indépendant, sociable</p>
+        <a href="chien1.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="femelle">
+      <img src="https://i.imgur.com/VJdmKwy.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Orphéa</h3>
+        <p>Chatte • 5 ans • Femelle</p>
+        <p>Douce, calme</p>
+        <a href="chat1.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="male">
+      <img src="https://i.imgur.com/81vMBXy.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Soren</h3>
+        <p>Chaton • 7 mois • Mâle</p>
+        <p>Curieux, câlin</p>
+        <a href="chat2.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="male">
+      <img src="https://i.imgur.com/1F4e2JD.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Black Jack</h3>
+        <p>Chat • 5 ans • Mâle</p>
+        <p>Gourmand, calme</p>
+        <a href="chat3.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="femelle">
+      <img src="https://i.imgur.com/waIUwrD.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Luciole</h3>
+        <p>Chatte • 2 ans • femelle</p>
+        <p>Discrète, calme</p>
+        <a href="chat4.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="femelle">
+      <img src="https://i.imgur.com/1e8Vo8B.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>pégase</h3>
+        <p>Chatte • 3 ans • Femelle</p>
+        <p>Calme, Gourmande</p>
+        <a href="Chat5.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+    <div class="animal-card" data-type="chat" data-sexe="male">
+      <img src="https://i.imgur.com/rC4246p.jpeg" alt="*">
+      <div class="animal-info">
+        <h3>Blue</h3>
+        <p>Chat • 2 ans • Mâle</p>
+        <p>Confiant, câlin</p>
+        <a href="chat6.html" class="fiche-btn">Voir la fiche de l'animal</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Script de filtrage -->
+  <script>
+    const filterType = document.getElementById('filter-type');
+    const filterSexe = document.getElementById('filter-sexe');
+    const cards = document.querySelectorAll('.animal-card');
+
+    function applyFilters() {
+      const selectedType = filterType.value;
+      const selectedSexe = filterSexe.value;
+
+      cards.forEach(card => {
+        const type = card.getAttribute('data-type');
+        const sexe = card.getAttribute('data-sexe');
+
+        const matchType = (selectedType === 'all' || selectedType === type);
+        const matchSexe = (selectedSexe === 'all' || selectedSexe === sexe);
+
+        if (matchType && matchSexe) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    filterType.addEventListener('change', applyFilters);
+    filterSexe.addEventListener('change', applyFilters);
+  </script>
+
+</body>
+</html>
